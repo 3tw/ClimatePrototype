@@ -8,16 +8,27 @@
     <title>You're running out of time</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:100,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100|Work+Sans:100&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="main-section">
-        <h1>Climate</h1>
+        <div id="showcase" class="flex">
+            <h1>Climate</h1>
+            <h2 id="header">
+                <p><span v-html="header"></span></p>
+            </h2>
+        </div>
+        <div id="text" class="flex">
+        </div>
     </div>
-
-<!-- js -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="/src/scripts/mainScript.js"></script>
+    <!-- vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>  
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/src/scripts/mainScript.js"></script>
 
 </body>
+
 </html>

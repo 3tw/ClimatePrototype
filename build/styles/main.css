@@ -1,27 +1,63 @@
 html {
-  position: fixed;
-  min-width: 100%;
   height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  scroll-behavior: smooth;
 }
 
 body {
   padding: 0;
   margin: 0;
-  height: 100vh;
-  width: 100vh;
+  height: 100%;
   background-color: #111;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.1em;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  line-height: 1.3em;
 }
 
 h1 {
   color: #FFDC00;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 100;
+  font-size: 85px;
+}
+
+h2 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin-top: 0;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: inherit;
+}
+
+#main-section {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+#showcase {
+  flex-basis: auto;
+}
+
+#header {
+  text-align: right;
+}
+
+#text {
+  flex-basis: auto;
+  font-size: 14px;
+  text-align: justify;
+  padding: 0 1.5em 0 1.5em;
+}
+
+@media screen and (min-width: 500px) {
+  #header {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

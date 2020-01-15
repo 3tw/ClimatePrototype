@@ -77,7 +77,7 @@ const main_text = new Vue({
                 this.show = true;
             }, 9000);
             setTimeout(() => {
-                this.text = "How are you going to refresh the planet?";
+                this.text = "Are you going to refresh the planet?";
             }, 11000);
         }
     }

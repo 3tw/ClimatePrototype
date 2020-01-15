@@ -41,7 +41,7 @@ h3 {
 
 #showcase {
   flex-basis: auto;
-  text-align: left;
+  text-align: center;
 }
 
 #header {
@@ -79,6 +79,7 @@ h3 {
 
   #showcase h1 {
     font-size: 130px;
+    text-align: left;
   }
 
   #header {

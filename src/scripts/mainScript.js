@@ -1,20 +1,14 @@
-const header = new Vue ({
+const header = new Vue({
     el: "#header",
     data: {
         header: `change won't just go away | you're <br>
         running out of time`
     },
-    mounted: function() {
-        setTimeout(() => {
-            this.header = `change won't just go away | you' re <br>`
-       }, 6000);
-    }
 })
 
-const main_text = new Vue ({
+const main_text = new Vue({
     el: "#text",
     data: {
-
         title: "Human Effects on Climate",
         text: `Human activities are continuing to affect the Earth’s energy budget by changing the emissions and
         resulting atmospheric concentrations of radiatively important gases and aerosols and by changing land
@@ -58,27 +52,36 @@ const main_text = new Vue ({
         Since the AR4, the observational basis has increased substantially, so that some extremes are now examined over most land areas.
         Furthermore, more models with higher resolution and a greater number of regional models have been used
         in the simulations and projections of extremes.`,
-        message: " "
-        },
-    template: `
-        <div>
-            <p>{{title}}</p>
-            <p>{{text}}</p>
-            <p>{{message}}</p>
-        </div>
-        `,
-
-    mounted: function() {
-        setTimeout(() => {
-            this.title = " "
-            this.text = " "
-       }, 4000);
+        message: "",
+        show: true
     },
-    updated: function() {
+    template:
+        `<div id="text">
+            <transition name="fade" v-if="show">
+                <p> {{title}} <br>
+                {{text}}<br>
+                {{message}}</p>
+            </transition>
+        </div>`,
+
+    mounted: function () {
         setTimeout(() => {
-            this.title = "You can refresh the page"
-            this.text = "Who is gonna refresh the Earth?"
-       }, 2000);
+            this.show = false
+        }, 1000);
+    },
+    watch: {
+        show: function () {
+            setTimeout(() => {
+                this.title = `You can refresh the page`
+                this.text = "";
+                this.show = true;
+            }, 9000);
+            setTimeout(() => {
+                this.text = "How are you going to refresh the planet?";
+            }, 11000);
+        }
     }
+
 })
+
 

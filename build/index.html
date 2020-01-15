@@ -13,18 +13,20 @@
 
 <body>
     <div id="main-section">
-        <div id="showcase" class="flex">
+        <div id="showcase">
             <h1>Climate</h1>
             <h2 id="header">
-                <p><span v-html="header"></span></p>
+                <transition name="fade">
+                    <span v-html="header"></span>
+                </transition>
             </h2>
         </div>
-        <div id="text" class="flex">
-        </div>
+        <div id="text"></div>
+    </div>
     </div>
     <!-- vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vuex"></script>  
+    <script src="https://unpkg.com/vuex"></script>
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="/src/scripts/mainScript.js"></script>

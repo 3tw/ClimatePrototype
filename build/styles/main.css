@@ -49,14 +49,43 @@ h3 {
 
 #text {
   flex-basis: auto;
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
-  padding: 0 1.5em 0 1.5em;
+  padding: 0 2em 0 2em;
+}
+
+.fade-enter-active {
+  transition: opacity 2.5s ease-in-out;
+}
+
+.fade-leave-active {
+  transition: opacity 7s ease-out;
+}
+
+.fade-enter {
+  opacity: 1;
+}
+
+.fade-leave-to {
+  opacity: 0;
 }
 
 @media screen and (min-width: 500px) {
   #header {
+    text-align: right;
+  }
+
+  #main-section {
+    padding: 0 4em 0 4em;
+  }
+
+  #showcase h1 {
+    font-size: 130px;
+  }
+
+  #header {
     text-align: left;
+    padding-left: 1.5em;
   }
 }
 

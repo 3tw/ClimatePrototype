@@ -11,6 +11,18 @@
 
 #text
     flex-basis: auto
-    font-size: 14px
+    font-size: 16px
     text-align: justify
-    padding: 0 1.5em 0 1.5em
+    padding: 0 2em 0 2em
+
+//transition
+.fade-enter-active
+    transition: opacity 2.5s ease-in-out
+    
+.fade-leave-active
+    transition: opacity 7s ease-out
+
+.fade-enter
+    opacity: 1
+.fade-leave-to
+    opacity: 0

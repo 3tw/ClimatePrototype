@@ -41,10 +41,12 @@ h3 {
 
 #showcase {
   flex-basis: auto;
+  text-align: left;
 }
 
 #header {
   text-align: right;
+  padding-right: 1.5em;
 }
 
 #text {
@@ -70,13 +72,9 @@ h3 {
   opacity: 0;
 }
 
-@media screen and (min-width: 500px) {
-  #header {
-    text-align: right;
-  }
-
+@media screen and (min-width: 550px) {
   #main-section {
-    padding: 0 4em 0 4em;
+    padding: 0 15% 0 15%;
   }
 
   #showcase h1 {

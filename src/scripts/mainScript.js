@@ -72,12 +72,12 @@ const main_text = new Vue({
     watch: {
         show: function () {
             setTimeout(() => {
-                this.title = `You can refresh the page`
+                this.title = `You can refresh this page`
                 this.text = "";
                 this.show = true;
             }, 9000);
             setTimeout(() => {
-                this.text = "Are you going to refresh the planet?";
+                this.text = "Not our planet.";
             }, 11000);
         }
     }

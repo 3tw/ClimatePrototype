@@ -58,9 +58,11 @@ const main_text = new Vue({
     template:
         `<div id="text">
             <transition name="fade" v-if="show">
-                <p> {{title}} <br>
-                {{text}}<br>
-                {{message}}</p>
+                <p> 
+                    {{title}} <br>
+                    {{text}} <br>
+                    {{message}}
+                </p>
             </transition>
         </div>`,
 

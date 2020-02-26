@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Execute code
     setTimers()
-    displayText("text", insert1, 10000)
-    displayText("text2", insert2, 12000)
+    displayText("text", insert1, 11000)
+    displayText("text2", insert2, 13000)
 
 }, false);

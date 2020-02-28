@@ -8,7 +8,7 @@ set -e
 git checkout gh-pages
 
 # sync with master
-git merge slow
+git merge master
 
 # add CNAME for custom domain
 

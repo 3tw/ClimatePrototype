@@ -52,7 +52,7 @@ h2 {
   grid-column: 2/3;
   font-size: 1rem;
   margin: 0;
-  text-align: justify;
+  text-align: left;
 }
 
 @media screen and (min-width: 550px) {
